@@ -24,9 +24,10 @@ header {
 nav {
     background-color: #3762DAFF;
     font-weight: bold;
+    color:white;
 }
 .navright{
-    margin-left:65%;
+    margin-left:4em;
     font-weight: bold;
 }
 
@@ -43,14 +44,17 @@ nav {
 .homeKeeper{
     background-color: #8996a4;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 20%;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 2%;
+    color: #feb800;
 }
 .keeper{
-    border-radius: 10px;
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: #424242 2px;
 }
 
 .profil {
@@ -101,8 +105,8 @@ header button {
 .cartes {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-top: 7%;
 
 }
 
@@ -187,11 +191,22 @@ footer {
 /* Fin du pied de page */
 
 @media screen and (max-width: 640px) {
-    nav .onglets .link, nav h1 {
+    nav .onglets .link, nav h1 img .logo {
         display: none;
     }
 
-    .cards .card img {
+    .homeKeeper{
+        height: 70%;
+        width: 70%;
+        height: 70%;
+        width: 70%;
+    }
+
+    .logo{
+        height: 70%;
+        width: 70%;
+    }
+    .cartes .carte img {
         width: 300px;
     }
 }
